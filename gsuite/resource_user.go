@@ -129,12 +129,12 @@ func resourceUser() *schema.Resource {
 				Computed: true,
 			},
 
-			"2s_enforced": {
+			"two_s_enforced": {
 				Type:     schema.TypeBool,
 				Computed: true,
 			},
 
-			"2s_enrolled": {
+			"two_s_enrolled": {
 				Type:     schema.TypeBool,
 				Computed: true,
 			},
@@ -1130,8 +1130,8 @@ func resourceUserImporter(d *schema.ResourceData, meta interface{}) ([]*schema.R
 	d.Set("is_admin", id.IsAdmin)
 	d.Set("is_delegated_admin", id.IsDelegatedAdmin)
 	d.Set("is_suspended", id.Suspended)
-	d.Set("2s_enrolled", id.IsEnrolledIn2Sv)
-	d.Set("2s_enforced", id.IsEnforcedIn2Sv)
+	d.Set("two_s_enrolled", id.IsEnrolledIn2Sv)
+	d.Set("two_s_enforced", id.IsEnforcedIn2Sv)
 	d.Set("aliases", id.Aliases)
 	d.Set("agreed_to_terms", id.AgreedToTerms)
 	d.Set("creation_time", id.CreationTime)
