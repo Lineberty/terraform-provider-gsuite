@@ -81,12 +81,12 @@ func dataUser() *schema.Resource {
 				Computed: true,
 			},
 
-			"2s_enforced": {
+			"two_s_enforced": {
 				Type:     schema.TypeBool,
 				Computed: true,
 			},
 
-			"2s_enrolled": {
+			"two_s_enrolled": {
 				Type:     schema.TypeBool,
 				Computed: true,
 			},
